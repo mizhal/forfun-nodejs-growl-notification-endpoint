@@ -1,0 +1,32 @@
+{
+  "name": "forfun-nodejs-growl-notification-endpoint",
+  "version": "1.0.0",
+  "description": "Kata-like small endpoint for sending notifications to desktop via HTTP POST",
+  "main": "app.js",
+  "dependencies": {
+    "bluebird": "^2.9.27",
+    "body-parser": "^1.12.4",
+    "express": "^4.12.4",
+    "node-notifier": "^4.2.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mizhal/forfun-nodejs-growl-notification-endpoint.git"
+  },
+  "keywords": [
+    "notification",
+    "nodejs",
+    "kata",
+    "scratch-an-itch"
+  ],
+  "author": "Mizhal",
+  "license": "GNU General Public License (GPL) version 2",
+  "bugs": {
+    "url": "https://github.com/mizhal/forfun-nodejs-growl-notification-endpoint/issues"
+  },
+  "homepage": "https://github.com/mizhal/forfun-nodejs-growl-notification-endpoint"
+}
