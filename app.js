@@ -7,16 +7,14 @@ var config = {
 
 var Promise = require('bluebird');
 
-var Growl = require('node-notifier/notifiers/growl');
+var notifier = Promise.promisifyAll(require('node-notifier'));
 var express = require('express');
 var bodyParser = require('body-parser');
-
-var growl = Promise.promisifyAll(new Growl());
 
 /** Server/Controller definition */
 var NotificationsController = {};
   NotificationsController.push = function(req, res){
-    growl.notifyAsync(req.body)
+    notifier.notifyAsync(req.body)
       .then(function(response){
         return res.status(200).json(response);
       })
